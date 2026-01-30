@@ -13,7 +13,7 @@ public class p4 {
         double s=0;
         int c=0;
         for(Number i:su){
-            s=s+i.intValue();
+            s=s+i.doubleValue();
             c=c+1;
         }
         return s/c;
@@ -26,7 +26,7 @@ public class p4 {
         int n=sc.nextInt();
        
         System.out.println("enter elements in arr1");
-        ArrayList<Number> list = new ArrayList<>();
+        ArrayList<Number> list = new ArrayList<>(); //wrapper classes inherit from number class which is the parnt
         boolean validinput=false;
        
            
