@@ -27,6 +27,7 @@ public class p3 {
 
         if (!Pattern.compile(emailRegex).matcher(email).matches()) {
             throw new InvalidEmailException("Format Error: '" + email + "' is not a valid email.");
+            //throws is used in method signature and throw is used to actually throw an exception
         }
     }
 
