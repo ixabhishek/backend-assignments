@@ -11,7 +11,7 @@ public class p1 {
         // inputstreamreader converts byte stream to character stream (converts bytes to
         // characters using a specified charset)
         try (BufferedReader bufferedReader = new BufferedReader(
-                new InputStreamReader(new FileInputStream("taskk.txt")))) {
+                new InputStreamReader(new FileInputStream("C:\\Users\\Abhishek25n\\OneDrive\\Desktop\\backend ix\\28-01-2026\\taskk.txt")))) {
             int charcount = 0;
             int wordcount = 0;
             int spacecount = 0;
@@ -95,7 +95,7 @@ public class p1 {
             System.out.println("...........................");
             System.out.println(" the no of paragraphs in file are " + paracount);
         } catch (FileNotFoundException e) {
-            System.err.println("File not found: paragraph.txt");
+            System.err.println("File not found: taskk.txt");
 
         } catch (IOException e) {
             System.err.println("An I/O error occurred while reading the file:");
