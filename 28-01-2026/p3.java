@@ -69,7 +69,7 @@ public class p3 {
             System.out.println("valid username");
         } catch (InvalidNameException e) {
             System.out.println(e.getMessage());
-        }
+        } //e is an object of the exception classIn this case, it is an object ofInvalidEmailExceptionThat object was created when throw was used
         try {
             checkAge(age);
             System.out.println("valid age");
