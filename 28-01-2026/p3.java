@@ -5,12 +5,12 @@ class InvalidEmailException extends Exception {
     public InvalidEmailException(String message) {
         super(message);
     }
-} // throw manually create and send an exception, throws This method might cause
+} // throw manually creates and send an exception, throws This method might cause
   // an exception”(possible)
 
 class InvalidNameException extends Exception {
     public InvalidNameException(String message) {
-        super(message);  //Not checked at compile time unchecked exception, checked at runtime checked exception
+        super(message);  // checked at run time unchecked exception, checked at complile checked exception
     }
 }
 
