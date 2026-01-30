@@ -22,47 +22,47 @@ public class p1 {
 
             while ((line = bufferedReader.readLine()) != null) {
 
-                // Paragraph count
+                //paragraphcount
                 if (line.trim().isEmpty()) {
                     paracount++;
                     continue;
                 }
 
-                // Remove extra spaces
+                //remove extra spaces
                 String simpleSpace = line.replaceAll("\\s+", " ");
                 System.out.println(simpleSpace);
 
-                // Character count
+                //character count
                 charcount += line.length();
 
-                // Word count
+                // word count
                 String[] words = simpleSpace.trim().split("\\s+");
                 wordcount += words.length;
 
-                // Space count
+                // space count
                 for (char ch : line.toCharArray()) {
                     if (ch == ' ') spacecount++;
                 }
 
-                // Sentence count
+                // sentence count
                 String[] sentences = line.split("[.!?:]+");
                 sentcount += sentences.length;
 
-                // Reverse words using StringBuilder
+                // reverse words using stringBuilder
                 StringBuilder res = new StringBuilder();
                 for (int i = words.length - 1; i >= 0; i--) {
                     res.append(words[i]).append(" ");
                 }
                 System.out.println(res.toString().trim());
 
-                // Word frequency
+                // word frequency
                 for (String word : words) {
                     word = word.toLowerCase();
                     wordFreq.put(word, wordFreq.getOrDefault(word, 0) + 1);
                 }
             }
 
-            // Final output
+            // final output
             System.out.println("\n---------------------------");
             System.out.println("Characters : " + charcount);
             System.out.println("Words      : " + wordcount);
@@ -72,7 +72,7 @@ public class p1 {
             System.out.println("Word Count : " + wordFreq);
 
         } catch (FileNotFoundException e) {
-            System.err.println("File not found: taskk.txt");
+            System.err.println("file not found: taskk.txt");
         } catch (IOException e) {
             System.err.println("I/O error while reading the file");
         }
