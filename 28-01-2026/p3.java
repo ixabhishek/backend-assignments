@@ -8,7 +8,7 @@ class InvalidEmailException extends Exception {
 } // throw manually creates and send an exception, throws This method might cause
   // an exception”(possible)
 
-class InvalidNameException extends Exception {
+class InvalidNameException extends Exception { //this is checked exception
     public InvalidNameException(String message) {
         super(message);  // checked at run time unchecked exception, checked at complile checked exception
     }

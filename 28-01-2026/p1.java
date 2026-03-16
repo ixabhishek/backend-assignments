@@ -32,7 +32,7 @@ public class p1 {
                 String simpleSpace = line.replaceAll("\\s+", " ");
                 System.out.println(simpleSpace);
 
-                //character count
+                //character count 
                 charcount += line.length();
 
                 // word count
